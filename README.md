@@ -19,7 +19,9 @@ Once you've signed up for a Twilio account, you'll to store your Twilio credenti
 ```
 {
     "Twilio": {
-        "AccountSID": "{{ YOUR_TWILIO_ACCOUNT_SID }}", "AuthToken": "{{ YOUR_TWILIO_AUTH_TOKEN }}", "PhoneNumber": "{{ YOUR_TWILIO_PHONE_NUMBER }}",
+        "AccountSID": "{{ YOUR_TWILIO_ACCOUNT_SID }}",
+        "AuthToken": "{{ YOUR_TWILIO_AUTH_TOKEN }}",
+        "PhoneNumber": "{{ YOUR_TWILIO_PHONE_NUMBER }}",
         "BaseURL": "https://api.twilio.com/2010-04-01"
     }
 }
