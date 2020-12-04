@@ -10,6 +10,21 @@ I don't particularly enjoy checking my email and only do so a couple times a day
 
 But really it seemed like a good excuse to try a new programming language. I went with Go.
 
+## Setup
+Much of this makes use of the Gmail APIs, which require authentication. The easiest way to get set up to use this API is by going through the [Go Quickstart](https://developers.google.com/gmail/api/quickstart/go), which will have you download the necessary `credentials.json` (which I haven't uploaded to this repo for obvious reasons).
+
+You'll also need a Twilio account and phone number. Using [my referral link](www.twilio.com/referral/XCX3Mu) will get each of us $10.
+
+Once you've signed up for a Twilio account, you'll to store your Twilio credentials in a `config.json` - again, which I haven't uploaded to this repo for obvious reasons. Your `config.json` should look like this:
+```
+{
+    "Twilio": {
+        "AccountSID": "{{ YOUR_TWILIO_ACCOUNT_SID }}", "AuthToken": "{{ YOUR_TWILIO_AUTH_TOKEN }}", "PhoneNumber": "{{ YOUR_TWILIO_PHONE_NUMBER }}",
+        "BaseURL": "https://api.twilio.com/2010-04-01"
+    }
+}
+```
+
 ## Usage
 ```
 $ go build main.go
